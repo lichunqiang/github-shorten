@@ -1,0 +1,39 @@
+{
+  "name": "github-shorten",
+  "version": "0.0.0",
+  "description": "github shorten url",
+  "main": "index.js",
+  "bin": {
+    "github-shorten": "cli.js"
+  },
+  "scripts": {
+    "test": "node test.js | tap-spec && npm run-script hint",
+    "hint": "jshint index.js cli.js test.js --reporter node_modules/jshint-stylish/stylish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lichunqiang/github-shorten"
+  },
+  "keywords": [
+    "github",
+    "url",
+    "shorten"
+  ],
+  "author": "light",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lichunqiang/github-shorten/issues"
+  },
+  "homepage": "https://github.com/lichunqiang/github-shorten",
+  "dependencies": {
+    "chalk": "^0.5.1",
+    "minimist": "^0.2.0",
+    "request": "^2.39.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.2",
+    "jshint-stylish": "^0.4.0",
+    "tap-spec": "^0.2.0",
+    "tape": "^2.14.0"
+  }
+}
