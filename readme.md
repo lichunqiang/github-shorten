@@ -27,6 +27,19 @@ $ github-shorten -u user -r repos
 $ github-shorten --help
 ```
 
+## Usage as a module
+
+```
+var shorten = require('github-shorten');
+
+shorten('test', 'repos', function(err, shorted_url) {
+	if(null !== err) {
+		return console.log(err);
+	}
+	console.log(shorted_url);
+});
+```
+
 ## License
 
 MIT
